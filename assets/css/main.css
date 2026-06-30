@@ -1,4 +1,4 @@
-﻿/* Fix horizontal scroll */
+/* Fix horizontal scroll */
 html,
 body {
   overflow-x: hidden;
@@ -954,7 +954,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   padding-top: 140px;
-  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent-color), transparent 96%) 0%, var(--background-color) 70%);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/mobil/1659543425_7-mobil-toyota-yang-punya-fitur-tss.avif') center center / cover no-repeat;
   position: relative;
   overflow: hidden;
   padding-bottom: 80px;
@@ -1005,7 +1005,7 @@ section,
   font-weight: 600;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: var(--heading-color);
+  color: #ffffff;
   letter-spacing: -0.02em;
 }
 
@@ -1031,7 +1031,7 @@ section,
 .hero .hero-content .hero-description {
   font-size: 1.125rem;
   line-height: 1.6;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #dddddd;
   margin-bottom: 40px;
   max-width: 580px;
   margin-left: auto;
@@ -1104,7 +1104,7 @@ section,
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
-  background: transparent;
+  background: white;
 }
 
 .hero .hero-content .hero-actions .btn-outline:hover {
@@ -1134,9 +1134,22 @@ section,
 
 @media (max-width: 576px) {
   .hero .hero-content .hero-metrics {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .hero .hero-content .hero-metrics .metric-item {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .hero .hero-content .hero-metrics .metric-item .metric-content .metric-number {
+    font-size: 1rem;
+  }
+  .hero .hero-content .hero-metrics .metric-item .metric-content .metric-label {
+    font-size: 0.75rem;
   }
 }
 
