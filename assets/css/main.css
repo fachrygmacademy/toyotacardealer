@@ -3585,3 +3585,60 @@ section,
   color: #fff;
   font-size: 14px;
 }
+
+/* Navmenu button styling */
+.navmenu a.btn-getstarted,
+.navmenu a.btn-getstarted:focus {
+  color: var(--contrast-color) !important;
+  background: var(--accent-color) !important;
+  font-size: 14px !important;
+  padding: 8px 25px !important;
+  margin: 10px 15px !important;
+  border-radius: 50px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.navmenu a.btn-getstarted:hover,
+.navmenu a.btn-getstarted:focus:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 15%) !important;
+  color: var(--contrast-color) !important;
+}
+
+@media (min-width: 1200px) {
+  .navmenu a.btn-getstarted,
+  .navmenu a.btn-getstarted:focus {
+    margin: 0 0 0 20px !important;
+  }
+}
+
+/* Mobile styles for services tabs */
+@media (max-width: 767px) {
+  .services-tabs .nav-pills {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    justify-content: center !important;
+  }
+  .services-tabs .nav-pills .nav-item {
+    width: auto !important;
+    margin: 0 !important;
+  }
+  .services-tabs .nav-pills .nav-link {
+    border-radius: 50px !important;
+    border: 1px solid var(--accent-color) !important;
+    color: var(--accent-color) !important;
+    background: transparent !important;
+    padding: 8px 15px !important;
+    margin: 0 !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+  }
+  .services-tabs .nav-pills .nav-link.active {
+    background: var(--accent-color) !important;
+    color: var(--contrast-color) !important;
+  }
+}
