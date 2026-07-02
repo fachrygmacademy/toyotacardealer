@@ -777,10 +777,10 @@ h6 {
 --------------------------------------------------------------*/
 .wa-floating {
   position: fixed;
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   right: 15px;
-  bottom: 70px;
+  bottom: 40px;
   z-index: 99999;
   background-color: #25d366;
   width: 44px;
@@ -788,6 +788,12 @@ h6 {
   border-radius: 50px;
   transition: all 0.4s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wa-floating.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 70px;
 }
 
 .wa-floating i {
@@ -1837,7 +1843,7 @@ section,
 
 .features .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-top: 80px;
 }
@@ -1921,8 +1927,15 @@ section,
 
 @media (max-width: 576px) {
   .features .features-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+  }
+
+  .features .feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
   }
 
   .features .features-content h2 {
@@ -2100,7 +2113,13 @@ section,
   padding: 2rem 0;
 }
 
+.testimonials .swiper-slide {
+  height: auto;
+}
+
 .testimonials .testimonial-card {
+  display: flex;
+  flex-direction: column;
   background: var(--surface-color);
   border-radius: 24px;
   padding: 2.5rem;
@@ -2178,6 +2197,7 @@ section,
   align-items: center;
   gap: 1rem;
   padding-top: 1.5rem;
+  margin-top: auto !important;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
 }
 

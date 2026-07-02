@@ -61,25 +61,32 @@
   });
 
   /**
-   * Scroll top button
+   * Scroll top and WA floating buttons
    */
   let scrollTop = document.querySelector('.scroll-top');
+  let waFloating = document.querySelector('.wa-floating');
 
-  function toggleScrollTop() {
+  function toggleFloatingButtons() {
     if (scrollTop) {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
+    if (waFloating) {
+      window.scrollY > 100 ? waFloating.classList.add('active') : waFloating.classList.remove('active');
+    }
   }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
+  }
 
-  window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
+  window.addEventListener('load', toggleFloatingButtons);
+  document.addEventListener('scroll', toggleFloatingButtons);
 
   /**
    * Animation on scroll function and init
