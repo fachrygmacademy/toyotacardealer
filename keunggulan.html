@@ -42,15 +42,18 @@
 
         </div>
     </header>
-    <main class="main" style="padding-top: 100px;">
-        <section id="features" class="features section">
+    <main class="main">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero section align-items-center justify-content-center" style="padding-top: 120px; padding-bottom: 60px; min-height: 40vh;">
+            <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="hero-title fw-bold">Keunggulan Kami</h1>
+                <p class="hero-description lead mt-3">Beragam Nilai Lebih yang Menjadikan Kami Pilihan Tepat Anda.</p>
+            </div>
+        </section>
+        <!-- /Hero Section -->
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Keunggulan</h2>
-                <p>Nikmati kemudahan dalam memiliki dan merawat kendaraan Toyota kesayangan Anda dengan berbagai layanan
-                    unggulan kami.</p>
-            </div><!-- End Section Title -->
+        <section id="features" class="features section">
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -59,14 +62,20 @@
                     <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
                         <div class="features-content">
                             <h2>Mengapa Memilih Dealer Kami?</h2>
-                            <p class="lead">Kami berdedikasi memberikan pengalaman pembelian kendaraan yang mudah,
-                                transparan, dan memuaskan dari awal hingga akhir.</p>
+                            
+                            <!-- Mobile Image Display -->
+                            <div class="features-image d-block d-lg-none my-4" data-aos="fade-up" data-aos-delay="250">
+                                <img src="assets/img/person/toyota-employee.jpg" alt="Layanan Karyawan Toyota" class="img-fluid" style="border-radius: 20px;">
+                            </div>
+
+                            <p class="lead">Kami berdedikasi memberikan pengalaman pembelian kendaraan yang mudah, transparan, dan memuaskan dengan pelayanan prima dari karyawan terbaik kami. Tim profesional kami terlatih untuk selalu mengedepankan kebutuhan Anda, memberikan konsultasi jujur, serta solusi finansial yang paling menguntungkan.</p>
+                            <p class="lead mt-3">Mulai dari pemilihan kendaraan yang tepat, proses administrasi yang tidak berbelit, hingga serah terima kunci di depan pintu rumah Anda, kami siap mendampingi setiap langkahnya dengan senyuman terbaik.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-                        <div class="features-image">
-                            <img src="assets/img/features/features-4.webp" alt="" class="img-fluid">
+                    <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-delay="300">
+                        <div class="features-image text-center">
+                            <img src="assets/img/person/toyota-employee.jpg" alt="Layanan Karyawan Toyota" class="img-fluid" style="border-radius: 20px; max-height: 450px; object-fit: cover;">
                         </div>
                     </div>
 
@@ -96,11 +105,11 @@
 
                     <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
                         <div class="feature-icon">
-                            <i class="bi bi-gem"></i>
+                            <i class="bi bi-person-badge"></i>
                         </div>
                         <div class="feature-content">
                             <h4>Sales Profesional</h4>
-                            <p>Pelayanan ramah, responsif, dan siap merekomendasikan produk terbaik.</p>
+                            <p>Pelayanan ramah, responsif, dan siap merekomendasikan produk terbaik untuk Anda.</p>
                         </div>
                     </div><!-- End Feature Item -->
 
@@ -110,7 +119,27 @@
                         </div>
                         <div class="feature-content">
                             <h4>Stok Ready</h4>
-                            <p>Ketersediaan berbagai warna dan tipe yang siap langsung diantar.</p>
+                            <p>Ketersediaan berbagai warna dan tipe yang siap langsung diantar ke rumah.</p>
+                        </div>
+                    </div><!-- End Feature Item -->
+                    
+                    <div class="feature-item" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="feature-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Mekanik Tersertifikasi</h4>
+                            <p>Kendaraan Anda ditangani oleh teknisi ahli standar internasional Toyota.</p>
+                        </div>
+                    </div><!-- End Feature Item -->
+                    
+                    <div class="feature-item" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="feature-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Layanan Purna Jual</h4>
+                            <p>Tim support 24 jam siap menjawab keluhan dan mengatur jadwal servis Anda.</p>
                         </div>
                     </div><!-- End Feature Item -->
 
@@ -191,8 +220,8 @@
                 </div>
 
                 <div class="cta-section" data-aos="fade-up" data-aos-delay="500">
-                    <a href="#" class="btn-primary">Mulai Sekarang Today</a>
-                    <a href="#" class="btn-secondary">Lihat Promo</a>
+                    <a href="https://wa.me/6281234567890?text=Halo%20admin%20dealer%20toyota" target="_blank" class="btn-primary">Mulai Sekarang Today</a>
+                    <a href="promo.html" class="btn-secondary">Lihat Promo</a>
                 </div>
             </div>
 

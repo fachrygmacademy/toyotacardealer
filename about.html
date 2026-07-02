@@ -61,11 +61,13 @@
     <main class="main">
 
         <!-- Hero Section -->
-                <section id="hero" class="hero section" style="padding: 120px 0 60px 0; min-height: auto;">
+        <section id="hero" class="hero section align-items-center justify-content-center" style="padding-top: 120px; padding-bottom: 60px; min-height: 40vh;">
             <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-                <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 20px;">Tentang Kami</h1>
-                <p class="hero-description" style="font-size: 1.2rem; margin-bottom: 0;">Mengenal Lebih Dekat Dealer Resmi Toyota Terpercaya Anda.</p>
-            </div></section><!-- /Hero Section -->
+                <h1 class="hero-title fw-bold">Tentang Kami</h1>
+                <p class="hero-description lead mt-3">Mengenal Lebih Dekat Dealer Resmi Toyota Terpercaya Anda.</p>
+            </div>
+        </section>
+        <!-- /Hero Section -->
 
         <!-- About Section -->
         <section id="about" class="about section">
@@ -74,64 +76,56 @@
 
                 <div class="row align-items-center gy-5">
 
-                    <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                    <div class="col-lg-5 d-none d-lg-block order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
                         <div class="image-section">
                             <div class="primary-image">
-                                <img src="assets/img/about/about-14.webp" alt="Dealer Toyota" class="img-fluid">
-                                <div class="experience-badge">
-                                    <div class="badge-content">
-                                        <span class="years">15+</span>
-                                        <span class="text">Tahun Melayani</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="image-grid">
-                                <img src="assets/img/about/about-3.webp" alt="Innova Zenix G Hybrid workspace"
-                                    class="img-fluid grid-img">
-                                <img src="assets/img/about/about-7.webp" alt="Team collaboration"
-                                    class="img-fluid grid-img">
+                                <img src="assets/img/person/toyota-employee.jpg" alt="Tim Dealer Toyota" class="img-fluid" style="border-radius: 20px;">
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+                    <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="300">
                         <div class="content-section">
                             <div class="section-intro">
-                                <div class="company-badge">TENTANG KAMI</div>
-                                <h2>Menghadirkan pengalaman berkendara terbaik dengan pelayanan prima</h2>
-                                <p class="intro-text">Kami adalah dealer resmi Toyota yang berkomitmen memberikan
-                                    layanan penjualan dan purna jual terbaik untuk Anda. Temukan berbagai pilihan mobil
-                                    idaman dengan promo menarik setiap bulannya.</p>
+                                <div class="company-badge">PROFIL KAMI</div>
+                                <h2>Sejarah & Dedikasi Kami untuk Keluarga Indonesia</h2>
+                                
+                                <!-- Mobile Image Display -->
+                                <div class="image-section d-block d-lg-none my-4" data-aos="fade-up" data-aos-delay="250">
+                                    <div class="primary-image">
+                                        <img src="assets/img/person/toyota-employee.jpg" alt="Tim Dealer Toyota" class="img-fluid" style="border-radius: 20px;">
+                                    </div>
+                                </div>
+                                
+                                <p class="intro-text">Berdiri sejak belasan tahun lalu, dealer kami telah menjadi bagian tak terpisahkan dari mobilitas masyarakat. Kami tidak hanya menjual kendaraan, melainkan membangun kepercayaan dan memberikan ketenangan pikiran bagi setiap pelanggan Toyota kami.</p>
                             </div>
 
                             <div class="achievement-list">
                                 <div class="achievement-item">
                                     <div class="achievement-icon">
-                                        <i class="bi bi-graph-up-arrow"></i>
+                                        <i class="bi bi-eye-fill"></i>
                                     </div>
                                     <div class="achievement-content">
-                                        <h4>Pelayanan Prima</h4>
-                                        <p>Staf profesional kami siap membantu Anda mulai dari pemilihan unit, proses
-                                            kredit, hingga pengiriman mobil ke rumah Anda.</p>
+                                        <h4>Visi Kami</h4>
+                                        <p>Menjadi dealer Toyota pilihan utama dan paling diandalkan yang selalu menghadirkan senyuman serta kepuasan maksimal di setiap layanan berkendara Anda.</p>
                                     </div>
                                 </div>
                                 <div class="achievement-item">
                                     <div class="achievement-icon">
-                                        <i class="bi bi-people-fill"></i>
+                                        <i class="bi bi-bullseye"></i>
                                     </div>
                                     <div class="achievement-content">
-                                        <h4>Teknisi Tersertifikasi</h4>
-                                        <p>Layanan bengkel kami didukung oleh mekanik handal bersertifikat standar
-                                            Toyota global, memastikan kendaraan Anda selalu prima.</p>
+                                        <h4>Misi Kami</h4>
+                                        <p>Berinovasi tanpa henti dalam pelayanan, meningkatkan kompetensi staf secara berkelanjutan, dan memberikan solusi otomotif paling efisien dan transparan.</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="action-section">
-                                <a href="#" class="btn btn-primary">Pelajari Lebih Lanjut</a>
-                                <div class="contact-info">
-                                    <span class="contact-label">Hubungi kami langsung:</span>
-                                    <strong class="phone-number">+1 (555) 234-5678</strong>
+                            <div class="action-section d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start">
+                                <a href="https://wa.me/6281234567890?text=Halo%20admin%20dealer%20toyota" target="_blank" class="btn btn-primary">Hubungi Kami Sekarang</a>
+                                <div class="contact-info mt-3 mt-lg-0 ms-lg-4">
+                                    <span class="contact-label">Layanan 24 Jam:</span>
+                                    <strong class="phone-number">+62 812-3456-7890</strong>
                                 </div>
                             </div>
                         </div>
